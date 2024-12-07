@@ -1,0 +1,181 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.frame{
+  position: relative;
+  background-color: #213547;
+  width: 90vw;
+  height: 95vh;
+}
+
+.top_content{
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+h2{
+  padding-top: 10vh;
+  padding-bottom: 2vh;
+}
+
+.middle_content{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: flex;
+  justify-content: center;
+
+}
+
+.middle_setup{
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+.bottom_setup{
+  margin-top: 7vh;
+}
+
+h4, h2{
+  padding-top: 1rem;
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p{
+  margin-top: 1rem;
+  margin-bottom: 0px;
+  margin-right: 0.5rem;
+  font-family: "Poppins", system-ui;
+  font-weight: 200;
+  font-style: normal;
+ 
+    color: rgb(211, 226, 226);
+
+}
+
+hr{
+  color: black;
+}
+
+input{
+  margin-top: 0.75rem;
+  width: 3.75rem;
+  height: 2rem;
+  border-radius: 5px;
+ }
+
+/* .card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+.circular-timer-button{
+  width: clamp(10rem, 20vw, 70rem);
+  height: clamp(15rem, 20vw, 70rem);
+}
+
+.workoutList{
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.workoutList button {
+  width: 60vw;
+  max-width: 300px;
+  height: 12vmin;
+  font-size: 1rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.welcomeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+
+
+
+@media screen and (max-height: 675px)
+{  
+
+
+.SetExercises{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.addMargin{
+  margin-right: 2vw;
+}
+
+.bottom_setup, .middle_setup{
+  margin-top: 4vh;
+}
+
+.top_content h2, .top_content h4 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.middle_content {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.circular-timer-button{
+  transform: scale(0.75);
+
+
+  /* fontSize: "clamp(4rem, 6rem, 10rem)"; */
+
+  /* borderWidth: "14px"; */
+}
+}
+
+
+@media screen and (min-width: 600px)
+{  
+  .top_content{
+    display: flex;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .top_content h2, h4 {
+    padding: 0;
+    padding-left: 5vw;
+    font-size: calc(1rem + .9vw);
+    
+  }
+  .top_content h2{
+    padding-right: 5vw;
+  }
+
+}
