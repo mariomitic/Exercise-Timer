@@ -10,6 +10,7 @@ function PreloadedLists({
     "LYING KNEE TO ELBOW",
     "PLANK TOE TAP",
     "LYING BACK PULL",
+    "SIDE TO SIDE",
     "RUSSIAN TWIST",
     "PUSH UPS",
     "RUNNING PLANLK",
