@@ -71,10 +71,20 @@ const CircularTimerButton = ({
       setCurrentExercise(
         timerParameters.exercise[exerciseLength - numberOfExercises - 1]
       );
-      setNextExerciseName(
-        timerParameters.exercise[exerciseLength - numberOfExercises]
-      );
+     
     }
+
+    if (exerciseLength === 0) {
+      setNextExerciseName
+      (
+        currentExercise + 1
+      );
+      if(numberOfExercises === 0){
+
+        setNextExerciseName
+        ("Last one in this set!")
+    }
+  }
 
     setSetName(numberOfSets);
     if (currentStage !== "done") {
@@ -145,6 +155,7 @@ const CircularTimerButton = ({
     numberOfRests,
     numberOfSets,
     currentStage,
+    exerciseLength
   ]);
 
   const percentage = ((durationPie - timeLeft) / durationPie) * 100;

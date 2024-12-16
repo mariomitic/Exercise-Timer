@@ -10,9 +10,12 @@ function WorkoutComponent({ activateComponent, timerParameters }) {
   useEffect(() => {
     if (nextExerciseName === undefined) {
       setNextExerciseName("Last one in this set!");
+      
     }
+    //console.log(timerParameters)
+    
     //}
-  }, [nextExerciseName]);
+  }, [nextExerciseName, timerParameters]);
 
   return (
     <div>

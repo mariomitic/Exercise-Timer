@@ -13,6 +13,7 @@ function PreloadedLists({
     "SIDE TO SIDE",
     "RUSSIAN TWIST",
     "PUSH UPS",
+    "SIT UP",
     "RUNNING PLANLK",
     "ALT TOE TOUCH",
     "PUSH UP PLANK",
@@ -23,6 +24,7 @@ function PreloadedLists({
     "DIVE BOMBER",
     "BUTTERFLY",
     "SHOULDER TAP",
+    "CURL UP",
     "LEVERED PLANK",
   ];
 
