@@ -63,6 +63,7 @@ hr{
 }
 
 input{
+  background-color: whitesmoke;
   margin-top: 0.75rem;
   width: 3.75rem;
   height: 2rem;
