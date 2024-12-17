@@ -67,10 +67,12 @@ const CircularTimerButton = ({
   };
 
   useEffect(() => {
-    if (exerciseLength !== 0) {
+    if (timerParameters.exercise) {
       setCurrentExercise(
         timerParameters.exercise[exerciseLength - numberOfExercises - 1]
       );
+      setNextExerciseName
+      (timerParameters.exercise[exerciseLength - numberOfExercises])
      
     }
 
