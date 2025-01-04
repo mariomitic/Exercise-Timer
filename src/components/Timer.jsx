@@ -67,6 +67,7 @@ const CircularTimerButton = ({
   };
 
   useEffect(() => {
+    console.log(currentStage)
     if (timerParameters.exercise) {
       setCurrentExercise(
         timerParameters.exercise[exerciseLength - numberOfExercises - 1]
@@ -89,10 +90,20 @@ const CircularTimerButton = ({
   }
 
     setSetName(numberOfSets);
-    if (currentStage !== "done") {
+/*     if (currentStage !== "done") {
       setExerciseName(currentExercise);
      
-    }
+    } */
+
+      if (currentStage === "exercise" || currentStage === "rest") {
+        setExerciseName(currentExercise);
+       
+      }
+      if (currentStage === "setBreak") {
+        setExerciseName("Set break");
+        setNextExerciseName("New set starting with:  " + timerParameters.exercise[exerciseLength - numberOfExercises - 1])
+       
+      }
 
     if (isRunning && timeLeft > -1) {
       const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
@@ -132,6 +143,7 @@ const CircularTimerButton = ({
           setTimeLeft(breakBetweenSets);
           setDurationPie(breakBetweenSets);
           setCurrentStage("setBreak");
+          setExerciseName("Set break");
         } else if (numberOfSets === 1) {
           setCurrentStage("done");
           setIsRunning(false);
@@ -142,11 +154,15 @@ const CircularTimerButton = ({
         setTimeLeft(durationExercise);
         setDurationPie(durationExercise);
         setCurrentStage("exercise");
+
       } else if (currentStage === "setBreak") {
         setTimeLeft(durationExercise);
         setDurationPie(durationExercise);
         setCurrentStage("exercise");
+        
+                      
       }
+
     }else if(currentStage === "done"){
       activateComponent("workoutcomplete")
     }
